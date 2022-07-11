@@ -31,8 +31,23 @@ class weather extends StatefulWidget {
 class _weatherState extends State<weather> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Colors.white,
+    return  Scaffold(
+      backgroundColor: const Color(0xff1C1C1C),
+      body:
+         Row(
+           mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: const [
+
+            Text("Weather Forecast",
+              style: TextStyle(
+                color: Colors.yellow,
+                fontSize: 35,
+                fontWeight: FontWeight.bold,
+              )
+            ),
+          ],
+        )
     );
   }
 }
