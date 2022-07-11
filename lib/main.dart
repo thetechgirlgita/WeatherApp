@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:hexcolor/hexcolor.dart';
+import 'constant.dart';
 
 void main() {
   runApp(const Weather());
@@ -32,7 +34,7 @@ class _weatherState extends State<weather> {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
-      backgroundColor: const Color(0xff1C1C1C),
+      backgroundColor: backgroundC,
       body:
          Row(
            mainAxisAlignment: MainAxisAlignment.center,
@@ -41,8 +43,8 @@ class _weatherState extends State<weather> {
 
             Text("Weather Forecast",
               style: TextStyle(
-                color: Colors.yellow,
-                fontSize: 35,
+                color : Colors.white,
+                fontSize: 30,
                 fontWeight: FontWeight.bold,
               )
             ),
